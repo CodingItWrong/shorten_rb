@@ -57,4 +57,7 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # allow a custom domain in dev for local testing of domain matching
+  # config.hosts << "link.outsidein.dev"
 end
