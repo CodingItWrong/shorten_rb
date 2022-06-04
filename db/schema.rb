@@ -27,6 +27,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_04_115710) do
     t.string "domain"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+
+    # note that this doesn't guard against when domain is null, apparently
     t.index ["domain", "slug"], name: "index_links_on_domain_and_slug", unique: true
   end
 
