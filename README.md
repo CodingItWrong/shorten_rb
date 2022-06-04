@@ -25,6 +25,8 @@ Redirects are configured with the `Link` model. A `Link` has the following attri
 
 There is no user interface for configuring `Link`s; use the Rails console.
 
+Redirects are always sent as `302 Found`. This ensures they aren't permanently cached, so you can change the redirect later.
+
 Accesses are logged as a `Hit` model. No information about the request is logged except for the time the request was made.
 
 ## License
