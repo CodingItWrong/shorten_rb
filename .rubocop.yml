@@ -1,0 +1,15 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'config.ru'
+    - 'config/**/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+    - 'Rakefile'
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
