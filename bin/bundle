@@ -8,7 +8,7 @@
 # this file is here to facilitate running it.
 #
 
-require "rubygems"
+require 'rubygems'
 
 m = Module.new do
   module_function
