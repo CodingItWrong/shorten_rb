@@ -9,6 +9,7 @@ AllCops:
     - 'Rakefile'
     - 'vendor/**/*'
   NewCops: enable
+  SuggestExtensions: false
 
 Metrics/BlockLength:
   Enabled: false
