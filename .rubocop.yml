@@ -7,6 +7,7 @@ AllCops:
     - 'db/schema.rb'
     - 'spec/*_helper.rb'
     - 'Rakefile'
+    - 'vendor/**/*'
   NewCops: enable
 
 Metrics/BlockLength:
