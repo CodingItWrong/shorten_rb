@@ -27,4 +27,22 @@ RSpec.describe 'links', type: :request do
       expect(response.header['Location']).to eq(link.destination)
     end
   end
+
+  context 'with a link with a non-matching domain' do
+    it 'raises a not found error' do
+      link = FactoryBot.create(:link, domain: 'other.example.com')
+
+      expect {
+        get "/#{link.slug}"
+      }.to raise_error(ActiveRecord::RecordNotFound)
+    end
+  end
+
+  context 'with a non-matching slug' do
+    it 'raises a not found error' do
+      expect {
+        get '/invalid-slug'
+      }.to raise_error(ActiveRecord::RecordNotFound)
+    end
+  end
 end
