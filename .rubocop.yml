@@ -5,8 +5,12 @@ AllCops:
     - 'config/**/*'
     - 'db/migrate/*'
     - 'db/schema.rb'
+    - 'spec/*_helper.rb'
     - 'Rakefile'
   NewCops: enable
+
+Metrics/BlockLength:
+  Enabled: false
 
 Style/BlockDelimiters:
   Enabled: false
