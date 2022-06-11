@@ -4,12 +4,14 @@ require 'rails_helper'
 
 RSpec.describe 'links', type: :request do
   it 'redirects to the link and logs the hit' do
-    slug = 'mylinkslug'
+    link = FactoryBot.create(:link)
 
-    expect {
-      get "/#{slug}"
-    }.to change { Hit.count }.by(1)
+    get "/#{link.slug}"
 
     expect(response.status).to eq(302)
+    expect(response.header['Location']).to eq(link.destination)
+
+    expect(Hit.count).to eq(1)
+    expect(Hit.last.link).to eq(link)
   end
 end
