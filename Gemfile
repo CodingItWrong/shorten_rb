@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 gem 'pg', '~> 1.4'
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 5.6'
 gem 'rails', '~> 7.0.3'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
