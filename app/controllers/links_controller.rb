@@ -13,7 +13,7 @@ class LinksController < ApplicationController
   private
 
   def slug
-    params[:slug]
+    params[:slug] || ''
   end
 
   def domain
