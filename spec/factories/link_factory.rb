@@ -2,8 +2,8 @@
 
 FactoryBot.define do
   factory :link do
-    slug { 'myslug' }
+    slug { "myslug" }
     domain { nil }
-    destination { 'https://destination.codingitwrong.com/path' }
+    destination { "https://destination.codingitwrong.com/path" }
   end
 end
