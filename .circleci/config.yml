@@ -6,7 +6,7 @@ jobs:
         environment:
           PGHOST: 127.0.0.1
           PGUSER: rails
-      - image: circleci/postgres:13
+      - image: cimg/postgres:15.1
         environment:
           POSTGRES_USER: rails
           POSTGRES_PASSWORD: apppassword
