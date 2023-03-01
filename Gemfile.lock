@@ -120,7 +120,7 @@ GEM
     parser (3.2.0.0)
       ast (~> 2.4.1)
     pg (1.4.5)
-    puma (6.0.2)
+    puma (6.1.1)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.2)
@@ -215,7 +215,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   pg (~> 1.4)
-  puma (~> 6.0)
+  puma (~> 6.1)
   rails (~> 7.0.4)
   rspec-rails
   rspec_junit_formatter
