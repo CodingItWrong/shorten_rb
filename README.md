@@ -29,6 +29,14 @@ Redirects are always sent as `302 Found`. This ensures they aren't permanently c
 
 Accesses are logged as a `Hit` model. No information about the request is logged except for the time the request was made.
 
+## Helpful Queries
+
+Number of hits per link:
+
+```ruby
+Link.select('links.id, domain, slug, COUNT(hits.id) AS hit_count').joins(:hits).group('links.id').order('hit_count DESC').map { |l| "#{l.domain}/#{l.slug} -- #{l.hits.count} hits" }
+```
+
 ## License
 
 MIT
