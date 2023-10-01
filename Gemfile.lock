@@ -123,7 +123,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.4)
-    puma (6.3.1)
+    puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -230,7 +230,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   pg (~> 1.5)
-  puma (~> 6.3)
+  puma (~> 6.4)
   rails (~> 7.0.7)
   rspec-rails
   rspec_junit_formatter
