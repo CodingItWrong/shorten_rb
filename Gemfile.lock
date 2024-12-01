@@ -136,7 +136,7 @@ GEM
     pg (1.5.9)
     psych (5.1.2)
       stringio
-    puma (6.4.3)
+    puma (6.5.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.8)
@@ -254,7 +254,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   pg (~> 1.5)
-  puma (~> 6.4)
+  puma (~> 6.5)
   rails (~> 7.2.2)
   rspec-rails
   rspec_junit_formatter
