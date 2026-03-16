@@ -20,3 +20,7 @@ group :test do
   gem "factory_bot_rails"
   gem "rspec_junit_formatter"
 end
+
+group :production do
+  gem "rack-attack"
+end
