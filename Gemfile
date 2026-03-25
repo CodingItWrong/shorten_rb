@@ -5,7 +5,7 @@ ruby "4.0.1"
 
 gem "pg", "~> 1.6"
 gem "puma", "~> 7.2"
-gem "rails", "~> 8.1.2"
+gem "rails", "~> 8.1.3"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
