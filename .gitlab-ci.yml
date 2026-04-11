@@ -1,0 +1,9 @@
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+railway-deploy:
+  stage: deploy
+  image: ghcr.io/railwayapp/cli:latest
+  script:
+    - for id in $RAILWAY_SERVICE_IDS; do railway up --service=$id; done
